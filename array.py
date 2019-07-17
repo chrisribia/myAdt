@@ -10,11 +10,13 @@ class pyArray:
         array_size = len(self.myArray)
         return array_size
 
-    def add_element(self,element,array_size):            
-        if array_size < self.myLen:
-            return self.myArray.append(element)
-        else:
-            return "python array size cannot be expanded beyond {}".format(self.myLen)
+   def add_element(self,element,array_size):   
+        try:         
+            if array_size < self.myLen:
+                return self.myArray.append(element)
+        except:
+            raise ValueError("python array must maintain the size of {}".format(self.myLen))
+            
     
 
 
