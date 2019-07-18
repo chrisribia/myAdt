@@ -1,4 +1,4 @@
-class my_2d_Array:
+class my2DArray:
     def __init__(self,col,row):
         """initializing"""
         self.col = col
