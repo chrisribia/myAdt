@@ -40,7 +40,9 @@ class Stack:
             return self.stack_adt.pop()
 
     def peek(self):
-        """return top item from a stack"""
+        """return top item from a stack        
+        Time : O(1)
+        """
         if self.is_empty:
             raise Exception("stack is Empty")
         else:
